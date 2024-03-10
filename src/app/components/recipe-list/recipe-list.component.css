@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.recipe-search {
+  width: 400px;
+  height: 40px;
+  padding-left: 10px;
+  margin-top: 60px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.recipes-container {
+  display: grid;
+  align-items: center;
+  gap: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 100px auto;
+}

@@ -1,0 +1,16 @@
+<div class="container">
+  <input
+    type="text"
+    class="recipe-search"
+    placeholder="Search recipes..."
+    [(ngModel)]="searchTerm"
+    (input)="filterRecipes()"
+  />
+  <div class="recipes-container">
+    <app-recipe
+      *ngFor="let recipe of filteredRecipes"
+      [element]="recipe"
+      (recipeDeleted)="onRecipeDeleted()"
+    ></app-recipe>
+  </div>
+</div>

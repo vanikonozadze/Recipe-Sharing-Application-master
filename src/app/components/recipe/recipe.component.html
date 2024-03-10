@@ -1,0 +1,24 @@
+<div class="recipe-box">
+  <img src="{{ element.thumbnail }}" alt="recipe image" class="recipe-image" />
+  <div class="recipe-box-text">
+    <p class="recipe-title">{{ element.title }}</p>
+    <p class="recipe-description">
+      {{ element.description }}
+    </p>
+    <div class="button-box">
+      <button class="view-button" [routerLink]="['/recipes', element.id]">
+        View
+      </button>
+      <button
+        class="edit-button"
+        [routerLink]="['/recipes', element.id, 'edit']"
+      >
+        Edit
+      </button>
+      <button class="delete-button" (click)="onDeleteRecipe()">Delete</button>
+      <button class="fav-button" id="fav-button" (click)="addFavRecipe(element)">
+        Fav
+      </button>
+    </div>
+  </div>
+</div>

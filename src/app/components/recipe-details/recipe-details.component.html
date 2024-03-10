@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="recipe-container">
+  <h1>{{ RecipeDetails.title }}</h1>
+  <div class="recipe-box">
+    <img
+      src="{{ RecipeDetails.thumbnail }}"
+      alt="recipe image"
+      class="recipe-image"
+    />
+    <div class="recipe-box-text">
+      <h2>Description</h2>
+      <p>{{ RecipeDetails.description }}</p>
+      <h2>Cooking Instructions</h2>
+      <p>{{ RecipeDetails.cookingInstructions }}</p>
+      <h2>Ingredients</h2>
+      <p>{{ RecipeDetails.ingredients }}</p>
+    </div>
+  </div>
+</div>

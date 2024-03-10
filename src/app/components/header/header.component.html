@@ -1,0 +1,8 @@
+<nav>
+  <p [routerLink]="['/add-recipe']">+ Add Recipe</p>
+  <h1 [routerLink]="['']">Recipe Sharing Application</h1>
+  <p (click)="toggleFavView()">Favorites</p>
+  <app-favorite-recipes
+    *ngIf="recipeService.favoriteBoolean"
+  ></app-favorite-recipes>
+</nav>
